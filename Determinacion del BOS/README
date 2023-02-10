@@ -1,0 +1,5 @@
+Herramientas utilizadas para determinacion del BOS
+pajaroavion es un script prestado que permite separar cantos de ruido, o la mayoria de ellos, utilizando la frecuencia habitual de los cantos de canarios
+cuentacantos es un script cuya salida es un porcentaje de cantos en distintas franjas horarias, ayuda a saber a qué hora es más probable que cante el candidato. Utilizar luego de pajaro avion
+automatictag es un metodo semiautomatico de deteccion de las frases. Se basa en archivos .pitchtier obtenidos en Praat y utiliza el Pitch para hacer crosscorrelaciones con una base de datos que se arma a medida que se tagean las frases.
+def_params, find_gte son scripts prestados que permiten la deteccion de onsets y offsets de silabas
