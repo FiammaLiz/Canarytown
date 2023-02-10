@@ -1,0 +1,20 @@
+En esta carpeta están los scripts para:
+- Leer archivos .rhd de INTAN y colocar la data ordenada en el workspace, guardando el "preprocesado" (Levantar_data)
+- Explorar archivos de registro de presión (explorar_pressure)
+- Explorar archivos de trigger cantando (explorar_trigger_audio)
+- Concatenar archivos de protocolos (paramerges)
+
+El script Ploteos es el principal, el guia par análisis por umbral (principalmente MUA). En él se llama a las funciones de esta carpeta,
+siguiendo mis pasos de analisis de protocolos auditivos: 
+-Ploteo y revisión de raw data (plotrawdata)
+-Detección de spikes (spikedetection)
+-Chequeo de detección (spikecheck)
+-Ploteo de raster (raster plot) o de histograma solo si la cantidad de spikes es demasiado (histplot)
+-Revisión de spikeshape (spikeshape)
+-Cálculo de ISI (para extracción de SU por umbral) (ISIcalculator)
+
+En esos pasos, al principio también se debe utilizar multiplech (plotea la detección en los distintos canales de un tetrodo) y/o multiplethr (para un mismo canal, un barrido de umbrales).
+
+Rastercluster y rasterplot_clusters es para resultados de clustering. 
+
+Equispace pega los distintos subplots, no es de mi autoría, pero se utiliza en el resto. 
